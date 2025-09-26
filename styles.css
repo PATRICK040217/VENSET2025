@@ -1,0 +1,86 @@
+/* CSS (styles.css) */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d92228;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+.container input,
+.container select,
+.container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container button {
+  background-color: #d92228;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: #a11b1e;
+}
+.result {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d92228;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.day-color-indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.sticker {
+  margin-top: 30px;
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+.sticker-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+.sticker-grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.sticker-column {
+  width: 30%;
+}
+.sticker-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: bold;
+}

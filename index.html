@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VENCIMIENTOS KFC</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>VENCIMIENTOS KFC</h1>
+    <input type="text" id="searchInput" placeholder="Buscar ítem..." onkeyup="filterItems()">
+    <select id="itemList" size="10"></select>
+    <label for="dateInput">
+      Fecha y hora inicial:
+      <span id="dayColor" class="day-color-indicator"></span>
+    </label>
+    <input type="datetime-local" id="dateInput" onchange="updateDayColor()">
+    <button onclick="calculateExpiry()">Calcular vencimiento</button>
+    <div id="result" class="result"></div>
+    <div id="sticker" class="sticker" style="display: none;">
+      <div id="stickerHeader" class="sticker-header">DÍA</div>
+      <div class="sticker-grid">
+        <div class="sticker-column" id="pColumn"></div>
+        <div class="sticker-column" id="lColumn"></div>
+        <div class="sticker-column" id="vColumn"></div>
+      </div>
+      <div class="sticker-footer">
+        <div>Producto: <span id="stickerProducto"></span></div>
+        <div>Responsable:</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
